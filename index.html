@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BMI Calculator</title>
+  <meta charset="utf-8">
+  <meta name="description" content="BMI Calculator">
+  <meta name="author" content="Azjir">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>BMI Calculator</h1>
+    <h2>Quick, easy, effective</h2>
+    <p>Azjir<br/></p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The Problem</h2>
+  </hgroup>
+  <article data-timings="">
+    <h1>Obesity in the United States</h1>
+
+<ul>
+<li>Obesity is one of the biggest health concerns in the United states</li>
+<li>According to the CDC(Center for Disease Control and Prevention) more than 1 in 3 americans is obese</li>
+<li>Obesity is related to increased rate of heart disease, stroke and type 2 diabetes</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="class" id="id" style="background:;">
+  <hgroup>
+    <h2>Knowledge is Power</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>Body Mass Index(BMI) is easy to calculate and can give an estimate of whether someone is obese, healthy or underweight</li>
+<li>An easy way to calculate BMI will give people information about themselves</li>
+<li>Having this information, people may use it to figure out if they need to lose or even gain weight.</li>
+<li>A healthy BMI is between 18.5 and 25. Below 18.5 is considered underweight and above 25 is considered overweight. Over 30 BMI is considered obese.</li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-3" style="background:;">
+  <hgroup>
+    <h2>Introducing the BMI calculator</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li>The BMI calculator is a simple tool that takes in height and mass and outputs BMI</li>
+<li>BMI is calculated by dividing the weight by the square of the height
+
+<ul>
+<li>In the case of imperial measurements this number has to be multiplied by 703 to make the units work out</li>
+</ul></li>
+<li>For example, a person who is 68 inches tall(5&#39; 8&quot;) and weighs 160 lb, the BMI would be calculated in this way:</li>
+</ul>
+
+<pre><code class="r">height &lt;- 68
+weight &lt;- 160
+BMI &lt;- (weight*703)/(height)^2
+</code></pre>
+
+<ul>
+<li>Therefore their BMI would be: 24.3252595, right on the verge of overweight.</li>
+<li>I have created a shiny web app that streamlines this process. It caulcuates the BMI and categorizes the result into healthy, overweight or underweight.</li>
+<li>The app can be found <a href="https://azjir.shinyapps.io/Project/">here</a></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="slide-4" style="background:;">
+  <hgroup>
+    <h2>Citations</h2>
+  </hgroup>
+  <article data-timings="">
+    <ul>
+<li><p>Information about United Stated obesity was obtained from the <a href="http://www.cdc.gov/obesity/data/adult.html">CDC</a></p></li>
+<li><p>Information about BMI was obtained from the BMI Wikipedia article: <a href="https://en.wikipedia.org/wiki/Body_mass_index">BMI</a></p></li>
+</ul>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The Problem'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Knowledge is Power'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='Introducing the BMI calculator'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='Citations'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>
